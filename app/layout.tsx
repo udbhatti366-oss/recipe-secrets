@@ -1,11 +1,7 @@
 
-import "./globals.css";
-
 export const metadata = {
-  title: "Recipe Secrets — Viral Recipes & Luxury Food Trends",
-
-  description:
-    "Discover viral recipes, luxury food trends, AI cooking tools and creator-focused food culture.",
+  title: "Recipe Secrets",
+  description: "Luxury food trends and viral recipes",
 };
 
 export default function RootLayout({
@@ -13,16 +9,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
   return (
     <html lang="en">
-
-      <body className="bg-black text-white">
-
-        {children}
-
-      </body>
-
+      <body>{children}</body>
     </html>
   );
 }
